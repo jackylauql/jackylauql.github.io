@@ -20,7 +20,13 @@ html, body {
 	position: fixed;
 	top: 15px;
 	left: 15px;
-	z-index: 1;
+	z-index: 2;
+	transition: 1s;
+	transform: translateX(0px);
+}
+
+.nav-menu:hover {
+	cursor: pointer;
 }
 
 .navigation-bar {
@@ -47,8 +53,7 @@ html, body {
 .nav-element {
 	display: flex;
 	height: 40px;
-	margin: 15px 0px 15px 10px;
-	padding-right: 20px;
+	padding: 15px 20px 15px 10px;
 	text-align: right;
 	line-height: 40px;
 }
@@ -60,6 +65,12 @@ html, body {
 
 .nav-element a {
 	width: 100%;
+}
+
+.nav-icons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .nav-icons img{
@@ -126,9 +137,14 @@ html, body {
 	list-style-type: none;
 }
 
-@media screen and (max-width: 1200px) {
+.active-scroll-nav {
+	background-color: black;
+}
+
+@media screen and (max-width: 1300px) {
 	.navigation-bar {
 		transform: translateX(-200px);
+		min-width: 200px;
 	}
 	
 	.main-content {
@@ -140,4 +156,3 @@ html, body {
 		display: block;
 	}
 }
-

@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body>
-        <script src="" async defer></script>
+        <script src="/scripts/main.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <nav class ="nav-menu">
             <img src="/images/menu.png">
         </nav>
@@ -21,19 +22,19 @@
                 <h1>Jacky Lau</h1>
             </div>
             <a href='#intro'>
-                <div class="nav-element">
+                <div id="intro-link" class="nav-element active-scroll-nav">
                     <img src="/images/links/intro_white.png">
                     <h3>Intro</h3>
                 </div>
             </a>
             <a href='#portfolio'>
-                <div class="nav-element">
+                <div id="portfolio-link" class="nav-element">
                     <img src="/images/links/portfolio_white.png">
                     <h3>Portfolio</h3>
                 </div>
             </a>
             <a href='#about'>
-                <div class="nav-element">
+                <div id="about-link" class="nav-element">
                     <img src="/images/links/about_white.png">
                     <h3>About Me</h3>
                 </div>
@@ -43,7 +44,7 @@
                 <h3>View Resume</h3>
             </div>
             <a href='#contact'>
-                <div class="nav-element">
+                <div id="contact-link" class="nav-element">
                     <img src="images/links/contact_white.png">
                     <h3>Contact Me</h3>
                 </div>
@@ -60,7 +61,7 @@
                 <p>Hi! I'm Jacky</p>
             </div>
             
-            <h2 id="portfolio" class="container-header">Portfolio</h2>
+            <h2 id="portfolio" class="container-header testtarget">Portfolio</h2>
             <div class="container">
                 <div class="flex-container">
                     <div class="portfolio-items">
@@ -88,7 +89,9 @@
                         </a>
                     </div>
                     <div class="portfolio-items">
-                        <a href="https://github.com/jackylauql/SudokuGame-with-Solver">Sudoku</a>
+                        <a href="https://github.com/jackylauql/SudokuGame-with-Solver">
+                            <h2>Sudoku</h2>
+                        </a>
                     </div>
                 </div>              
             </div>
@@ -96,6 +99,7 @@
             <h2 id="about" class="container-header">About Me</h2>
             <div class='container'>
                 <div>
+                    <img src="/images/portfolio/blogshop.png">
                     <p>I am an excellent problem solver with great interpersonal skills developed from past experiences as a frontliner. My primary motivation is to continuously learn, improve and
                         become a better version of myself. I enjoy tackling difficult challenges as I believe successfully overcoming them will hone me into becoming a better person/programmer. Work
                         aside, I enjoy Cooking, Badminton, Esports, Board Games, Snooker, Bowling. Listed below are the languages and frameworks I am familiar with:
