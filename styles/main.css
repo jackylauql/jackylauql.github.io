@@ -104,13 +104,16 @@ html, body {
 
 .portfolio-items {
 	text-align: center;
-	margin: 1rem 2rem;
-	border: 1px solid black;
+	margin: 10px;
 }
 
-img{
+.portfolio-items img {
+	max-height: 200px;
 	max-width: 100%;
-	height: auto;
+}
+
+.portfolio-items h2{
+	border-top: 1px solid rgb(190, 190, 190);
 }
 
 /*About*/
