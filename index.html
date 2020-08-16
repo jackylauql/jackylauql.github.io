@@ -9,6 +9,7 @@
         <title>Jacky's Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body>
@@ -49,54 +50,70 @@
 
         <div class="main-content">
             <div id="intro" class="container">
-                <p>Hi! I'm Jacky</p>
+                <p>Hello, I'm <span class="name">Jacky</span>.<br>A passionate aspiring software engineer with years of customer service experience.</p>
             </div>
             
-            <h2 id="portfolio" class="container-header">Portfolio</h2>
+            <h2 id="portfolio" class="container-header">
+                Portfolio
+                <div class="container-header-underline"></div>
+            </h2>
             <div class="container flex-container">
-                    <div class="portfolio-items">
-                        <a href="https://jackylauql.github.io/BlogShop/store.html">
-                            <img src="/images/portfolio/blogshop.png">
+                    <div id="blogshop" class="portfolio-items">
+                        <a href="https://jackylauql.github.io/BlogShop/index.html">
+                            <img src="images/portfolio/blogshop.png">
                             <h2>BlogShop</h2>
                         </a>
                     </div>
-                    <div class="portfolio-items">
+                    <div id="sudoku" class="portfolio-items">
                         <a href="https://github.com/jackylauql/SudokuGame-with-Solver">
-                            <img src="/images/portfolio/sudoku.png">
+                            <img src="images/portfolio/sudoku.png">
                             <h2>Sudoku</h2>
                         </a>
                     </div>        
             </div>
 
-            <h2 id="about" class="container-header">About Me</h2>
-            <div class='container flex-container'>
-                <div>
-                    <img src="/images/portfolio/blogshop.png">
-                    <p>I am an excellent problem solver with great interpersonal skills developed from past experiences as a frontliner. My primary motivation is to continuously learn, improve and
-                        become a better version of myself. I enjoy tackling difficult challenges as I believe successfully overcoming them will hone me into becoming a better person/programmer. Work
-                        aside, I enjoy Cooking, Badminton, Esports, Board Games, Snooker, Bowling. Listed below are the languages and frameworks I am familiar with:
-                    </p>
-                    <ul class='about-language-container'>
-                        <li class='about-languages'>Python</li>
-                        <li class='about-languages'>HTML</li>
-                        <li class='about-languages'>CSS</li>
-                        <li class='about-languages'>Javascript</li>
-                        <li class='about-languages'>SQL</li>
-                        <li class='about-languages'>PHP</li>
-                        <li class='about-languages'>Express.js</li>
-                        <li class='about-languages'>Node.js</li>
 
-                    </ul>
+            <div id="about">
+                <h2 class="container-header">
+                    About Me
+                    <div class="container-header-underline"></div>
+                </h2>
+                <div class='container flex-container about-container'>
+                    <div class="about-items">
+                        <img src="/images/about_me.jpg">
+                        <p>I am an excellent problem solver with great interpersonal skills developed from past experiences as a customer service professional. </p>
+                        <br>
+                        <p>My primary motivation is to continuously learn, improve and become a better version of myself.</p>
+                        <br>
+                        <p>I enjoy tackling difficult challenges as I believe successfully overcoming them will hone me into becoming a better person/programmer. </p>
+                        <br>
+                        <p>Listed below are the languages and frameworks I am familiar with:</p>
+                        
+                        <ul class='about-language-container'>
+                            <li class='about-languages'>Python</li>
+                            <li class='about-languages'>HTML</li>
+                            <li class='about-languages'>CSS</li>
+                            <li class='about-languages'>Javascript</li>
+                            <li class='about-languages'>SQL</li>
+                            <li class='about-languages'>PHP</li>
+                            <li class='about-languages'>Express.js</li>
+                            <li class='about-languages'>Node.js</li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <h2 id="contact" class="container-header">Contact Information</h2>
-            <div class='container'>
-                <img src="/images/portfolio/blogshop.png">
-                <div>
-                    <p>Email: jackylqlong@gmail.com</p>
-                    <br>
-                    <p>Mobile: 87999746</p>
+            <div id="contact">
+                <h2 class="container-header">
+                    Contact Information
+                    <div class="container-header-underline"></div>
+                </h2>
+                <div class='container'>
+                    <div class="contact-content">
+                        <p>Email: jackylqlong@gmail.com</p>
+                        <br>
+                        <p>Mobile: 87999746</p>
+                    </div>
                 </div>
             </div>
             <footer class="footer">
@@ -109,6 +126,9 @@
                     <a href="https://github.com/jackylauql"><img src="/images/github.png"></a>
                 </div>
             </footer>
+
+
+
         </div>
     </body>
 </html>
