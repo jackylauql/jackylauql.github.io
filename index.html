@@ -15,115 +15,251 @@
     <body>
         <script src="/scripts/main.js" async defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <nav class ="nav-menu">
-            <img src="/images/menu.png">
-        </nav>
-        <nav class ="navigation-bar">
-            <div class="nav-head">
-                <h1>Jacky Lau</h1>
-            </div>
-            <a href='#intro'>
-                <div id="intro-link" class="nav-element active-scroll-nav">
-                    <img id="intro-link-img" src="/images/links/intro_black.png">
-                    <h3>Intro</h3>
-                </div>
-            </a>
-            <a href='#portfolio'>
-                <div id="portfolio-link" class="nav-element">
-                    <img id="portfolio-link-img" src="/images/links/portfolio_white.png">
-                    <h3>Portfolio</h3>
-                </div>
-            </a>
-            <a href='#about'>
-                <div id="about-link" class="nav-element">
-                    <img id="about-link-img" src="/images/links/about_white.png">
-                    <h3>About Me</h3>
-                </div>
-            </a>
-            <a href='#contact'>
-                <div id="contact-link" class="nav-element">
-                    <img id="contact-link-img" src="images/links/contact_white.png">
-                    <h3>Contact</h3>
-                </div>
-            </a>
-        </nav>
 
-        <div class="main-content">
-            <div id="intro" class="container">
-                <p>Hello, I'm <span class="name">Jacky</span>.<br>A passionate aspiring software engineer with years of customer service experience.</p>
-            </div>
-            
-            <h2 id="portfolio" class="container-header">
-                Portfolio
-                <div class="container-header-underline"></div>
-            </h2>
-            <div class="container flex-container">
-                    <div id="blogshop" class="portfolio-items">
-                        <a href="https://jackylauql.github.io/BlogShop/index.html">
-                            <img src="images/portfolio/blogshop.png">
-                            <h2>BlogShop</h2>
-                        </a>
+        
+        <div id="intro">
+            <span class="introText">
+                <span>Hello, I'm <span class="name">Jacky</span>.
+                <br class="lineBreak">
+                An aspiring software engineer with years of customer service experience.
+                <br class="lineBreak">
+                <span class="mediaLinks">
+                    <a href="https://www.facebook.com/jackylql"><img src="/images/facebook.png"></a>
+                    <a href="https://www.linkedin.com/in/jacky-lauql/"><img src="/images/linkedin.png"></a>
+                    <a href="https://github.com/jackylauql"><img src="/images/github.png"></a>
+                </span>
+            </span>
+        </div>
+        
+
+        <div class="mainContent">
+            <!-- Navigation Bar
+            <div>
+                <nav class ="nav-menu">
+                    <img src="/images/menu.png">
+                </nav>
+                <nav class ="navigation-bar">
+                    <div class="nav-head">
+                        <h1>Jacky Lau</h1>
                     </div>
-                    <div id="sudoku" class="portfolio-items">
-                        <a href="https://github.com/jackylauql/SudokuGame-with-Solver">
-                            <img src="images/portfolio/sudoku.png">
-                            <h2>Sudoku</h2>
-                        </a>
-                    </div>        
+                    <a href='#intro'>
+                        <div id="intro-link" class="nav-element active-scroll-nav">
+                            <img id="intro-link-img" src="/images/links/intro_black.png">
+                            <h3>Intro</h3>
+                        </div>
+                    </a>
+                    <a href='#project'>
+                        <div id="project-link" class="nav-element">
+                            <img id="project-link-img" src="/images/links/project_white.png">
+                            <h3>project</h3>
+                        </div>
+                    </a>
+                    <a href='#about'>
+                        <div id="about-link" class="nav-element">
+                            <img id="about-link-img" src="/images/links/about_white.png">
+                            <h3>About Me</h3>
+                        </div>
+                    </a>
+                    <a href='#contact'>
+                        <div id="contact-link" class="nav-element">
+                            <img id="contact-link-img" src="images/links/contact_white.png">
+                            <h3>Contact</h3>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+            -->
+            <div id ="project">
+                <div class="mainContentContainer">
+                    <h2 class="containerHeader">
+                        <span>Projects</span>
+                        <div class="containerHeaderUnderline"></div>
+                    </h2>
+                    <div class="projectContainer flexContainer">
+                        <div id="blogshop" class="projectItems">
+                            <div class="projectDescriptionContainer">
+                                <div class="projectDescription">
+                                    <p>BlogShop</p>
+                                    <p class="projectLanguage">HTML/CSS/Javascript</p>
+                                    <br>
+                                    <br>
+                                    <p><a href="https://jackylauql.github.io/BlogShop/index.html" class="projectButton">Visit Site</a></p>
+                                </div>
+                            </div>
+                            <img src="images/project/blogshop.png">        
+                        </div>
+                        <div id="sudoku" class="projectItems">
+                            <div class="projectDescriptionContainer">
+                                <div class="projectDescription">
+                                    <p>Sudoku with Built-in Solver</p>
+                                    <p class="projectLanguage">Python</p>
+                                    <br>
+                                    <br>
+                                    <p><a href="https://github.com/jackylauql/SudokuGame-with-Solver" class="projectButton">Visit Site</a></p>
+                                </div>
+                            </div>
+                            <img src="images/project/sudoku.png">
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
             <div id="about">
-                <h2 class="container-header">
-                    About Me
-                    <div class="container-header-underline"></div>
-                </h2>
-                <div class='container flex-container about-container'>
-                    <div class="about-items">
-                        <img src="/images/about_me.jpg">
-                        <p>I am an excellent problem solver with great interpersonal skills developed from past experiences as a customer service professional. </p>
-                        <br>
-                        <p>My primary motivation is to continuously learn, improve and become better than who I was yesterday.</p>
-                        <br>
-                        <p>I enjoy tackling difficult challenges as I believe successfully overcoming them will hone me into becoming a better person/programmer. </p>
-                        <br>
-                        <p>Listed below are the languages and frameworks I am familiar with:</p>
+                <div class="mainContentContainer">
+                    <h2 class="containerHeader">
+                        About Me
+                        <div class="containerHeaderUnderline"></div>
+                    </h2>
+                    <div class='flexContainer aboutContainer'>
+                        <div class="aboutLeftItems">
+                            <div class="aboutImageRow">
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                            </div>
+                            <div class="aboutImageRow">
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                                <div class="aboutImageContainer">
+                                    <img class="aboutImages" src="/images/about_me.jpg">
+                                </div>
+                            </div>
+                            <p>I am an excellent problem solver with great interpersonal skills developed from past experiences as a customer service professional. </p>
+                            <p>My primary motivation is to continuously learn, improve and become better than who I was yesterday.</p>
+                        </div>
                         
-                        <ul class='about-language-container'>
-                            <li class='about-languages'>Python</li>
-                            <li class='about-languages'>HTML</li>
-                            <li class='about-languages'>CSS</li>
-                            <li class='about-languages'>Javascript</li>
-                            <li class='about-languages'>SQL</li>
-                            <li class='about-languages'>PHP</li>
-                            <li class='about-languages'>Express.js</li>
-                            <li class='about-languages'>Node.js</li>
+                        <div class="aboutRightItems">
+                            <ul class='aboutLanguageContainer'>
 
-                        </ul>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>Python</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>HTML</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>CSS</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>Javascript</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>Express.js</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>Node.js</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>SQL</li>
+                                </div>
+                                <div class="hexagonContainer">
+                                    <div class="hexagonTopLeftRight">                                  
+                                    </div>
+                                    <div class="hexagonTopDown">                                  
+                                    </div>
+                                    <div class="hexagonTopRightLeft">                                  
+                                    </div>
+                                    <div class="hexagonLeftRight">                                  
+                                    </div>
+                                    <li class='aboutLanguages'>PHP</li>
+                                </div>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div id="contact">
-                <h2 class="container-header">
-                    Contact Information
-                    <div class="container-header-underline"></div>
-                </h2>
-                <div class='container'>
-                    <div class="contact-content">
-                        <p>Email: jackylqlong@gmail.com</p>
-                        <br>
-                        <p>Mobile: 87999746</p>
-                    </div>
-                </div>
-            </div>
+
+
+
+            
             <footer class="footer">
-                <div class="back-to-top">
-                    <a href="#intro"><img src="/images/back_to_top.png"></a>
-                </div>
-                <div class="nav-icons">
-                    <a href="https://www.facebook.com/jackylql"><img src="/images/facebook.png"></a>
-                    <a href="https://www.linkedin.com/in/jacky-lauql/"><img src="/images/linkedin.png"></a>
-                    <a href="https://github.com/jackylauql"><img src="/images/github.png"></a>
+                <div id="contact">
+                    <div class="mainContentContainer">
+                        <h2 class="containerHeader">
+                            Contact
+                            <div class="contactContainerHeaderUnderline"></div>
+                        </h2>
+                        <div class="contactItems">
+                            <p>Email: jackylqlong@gmail.com</p>
+                            <div class="mediaLinks">
+                                <a href="https://www.facebook.com/jackylql"><img src="/images/facebook.png"></a>
+                                <a href="https://www.linkedin.com/in/jacky-lauql/"><img src="/images/linkedin.png"></a>
+                                <a href="https://github.com/jackylauql"><img src="/images/github.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <span>Jacky Lau © 2020</span> 
+                    </div>
+                    
                 </div>
             </footer>
 
