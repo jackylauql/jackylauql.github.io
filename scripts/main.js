@@ -9,8 +9,9 @@ var aboutContainer = document.getElementsByClassName('aboutContainer')[0]
 var aboutLeftItems = document.getElementsByClassName('aboutLeftItems')[0]
 var aboutLanguageContainer = document.getElementsByClassName('aboutLanguageContainer')[0]
 var contactItems = document.getElementsByClassName('contactItems')[0]
-
-
+var overlay = document.getElementById('overlay')
+var overlayImage = document.getElementById('overlayImage')
+var aboutImages = document.getElementsByClassName('aboutImages')
 
 var projectScroll = $('#project').offset().top
 var projectContainerScroll = $('.projectContainer').offset().top
@@ -19,7 +20,20 @@ var contactScroll = $('#contact').offset().top
 var aboutContainerScroll = $('.aboutContainer').offset().top
 var halfWindowHeight = Math.floor((window.innerHeight) / 2)
 
+let imagesIndex = 0
+while (imagesIndex < aboutImages.length) {
+    const imgSource = aboutImages[imagesIndex].src.split('images')[1]
+    aboutImages[imagesIndex].addEventListener('click', () => {
+        imgFullPath = `/images${imgSource}`
+        overlayImage.src = imgFullPath
+        overlay.style.display = "flex";
+    })
+    imagesIndex = imagesIndex + 1
+}
 
+overlay.addEventListener('click', () => {
+    overlay.style.display ="none";
+})
 
 
 const reset = () =>{
@@ -121,7 +135,6 @@ $(window).scroll(() =>{
         aboutLeftItems.style.opacity = "1"
 
         const numberOfLanguages = aboutLanguageContainer.children.length
-        console.log(numberOfLanguages)
         var index = 0
         var delay = 1
         while (index < numberOfLanguages) {
