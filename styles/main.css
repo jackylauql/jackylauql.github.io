@@ -91,7 +91,7 @@ html, body {
 
 @keyframes rotateHorizontal {
 	from {
-		transform: rotateY(180deg);
+		transform: rotateY(180deg);	
 		opacity: 0;
 	}
 
@@ -234,6 +234,7 @@ html, body {
 	max-height: 225px;
 	max-width: 300px;
 	border-radius: 10px;
+	margin: auto;
 }
 
 .projectDescriptionContainer {
@@ -261,7 +262,12 @@ html, body {
 }
 
 .projectLanguage {
+	display: flex;
+	flex-wrap: wrap;
+	width: 250px;
 	color: rgb(97, 179, 255);
+	justify-content: center;
+	margin: auto;
 }
 
 .projectButton {
