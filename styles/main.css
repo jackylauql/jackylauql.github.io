@@ -226,8 +226,10 @@ html, body {
 	background-color: white;
 	height: 225px;
 	width: 300px;
+	min-width: 300px;
 	box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
 	border-radius: 5%;
+	margin-bottom: 20px;
 }
 
 .projectItems img {
