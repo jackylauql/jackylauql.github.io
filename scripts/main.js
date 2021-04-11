@@ -3,9 +3,11 @@ var navBar = document.getElementsByClassName('navigation-bar')[0]
 var containerHeader = document.getElementsByClassName('containerHeader')
 var project = document.getElementById('project')
 var about = document.getElementById('about')
+var why = document.getElementById('why')
 var contact = document.getElementById('contact')
 var projectContainer = document.getElementsByClassName('projectContainer')[0]
 var aboutContainer = document.getElementsByClassName('aboutContainer')[0]
+var whyContainer = document.getElementsByClassName('whyContainer')[0]
 var aboutLeftItems = document.getElementsByClassName('aboutLeftItems')[0]
 var aboutLanguageContainer = document.getElementsByClassName('aboutLanguageContainer')[0]
 var contactItems = document.getElementsByClassName('contactItems')[0]
@@ -16,8 +18,10 @@ var aboutImages = document.getElementsByClassName('aboutImages')
 var projectScroll = $('#project').offset().top
 var projectContainerScroll = $('.projectContainer').offset().top
 var aboutScroll = $('#about').offset().top
-var contactScroll = $('#contact').offset().top
 var aboutContainerScroll = $('.aboutContainer').offset().top
+var whyScroll = $('#why').offset().top
+var whyContainerScroll = $('.whyContainer').offset().top
+var contactScroll = $('#contact').offset().top
 var halfWindowHeight = Math.floor((window.innerHeight) / 2)
 
 let imagesIndex = 0
@@ -48,6 +52,8 @@ const reset = () =>{
     projectContainerScroll = $('.projectContainer').offset().top
     aboutScroll = $('#about').offset().top
     aboutContainerScroll = $('.aboutContainer').offset().top
+    whyScroll = $('#why').offset().top
+    whyContainerScroll = $('.whyContainer').offset().top
     contactScroll = $('#contact').offset().top
 }
 
@@ -60,6 +66,10 @@ if (currentScroll >= (contactScroll - Math.floor(halfWindowHeight/2 * 3))) {
     contactItems.style.animationName = "popIn"
     contactItems.style.animationDuration = "1s"
     contactItems.style.transform = "scale(1)"
+} 
+if (currentScroll >= (whyScroll - halfWindowHeight)) {
+    why.firstElementChild.firstElementChild.style.animationName = "slideFromLeft";
+    why.firstElementChild.firstElementChild.style.opacity = "1";
 } 
 if (currentScroll >= (aboutScroll - halfWindowHeight)) {
     about.firstElementChild.firstElementChild.style.animationName = "slideFromLeft";
@@ -86,7 +96,6 @@ if (currentScroll >= (aboutContainerScroll - halfWindowHeight)) {
     aboutLeftItems.style.opacity = "1"
 
     const numberOfLanguages = aboutLanguageContainer.children.length
-    console.log(numberOfLanguages)
     var index = 0
     var delay = 1
     while (index < numberOfLanguages) {
@@ -100,15 +109,24 @@ if (currentScroll >= (aboutContainerScroll - halfWindowHeight)) {
     }
     
 }
+if (currentScroll >= (whyScroll - halfWindowHeight)) {
+    whyContainer.style.animationName = "slideFromBottom"
+    whyContainer.style.animationDuration = "1s"
+    whyContainer.style.opacity = "1"
+}
 
 $(window).scroll(() =>{
     currentScroll = $(window).scrollTop()
-    if (currentScroll >= (contactScroll - Math.floor(halfWindowHeight/2 * 3))) {
+    if (currentScroll >= (contactScroll - Math.floor(halfWindowHeight * 2))) {
         contact.firstElementChild.firstElementChild.style.animationName = "slideFromLeft";
         contact.firstElementChild.firstElementChild.style.opacity = "1";
         contactItems.style.animationName = "popIn"
         contactItems.style.animationDuration = "1s"
         contactItems.style.transform = "scale(1)"
+    } 
+    if (currentScroll >= (whyScroll - halfWindowHeight)) {
+        why.firstElementChild.firstElementChild.style.animationName = "slideFromLeft";
+        why.firstElementChild.firstElementChild.style.opacity = "1";
     } 
     if (currentScroll >= (aboutScroll - halfWindowHeight)) {
         about.firstElementChild.firstElementChild.style.animationName = "slideFromLeft";
@@ -133,7 +151,7 @@ $(window).scroll(() =>{
         aboutLeftItems.style.animationName = "slideFromBottom"
         aboutLeftItems.style.animationDuration = "1s"
         aboutLeftItems.style.opacity = "1"
-
+        console.log(aboutLanguageContainer.children[0])
         const numberOfLanguages = aboutLanguageContainer.children.length
         var index = 0
         var delay = 1
@@ -146,7 +164,11 @@ $(window).scroll(() =>{
             delay = delay + 0.1
             
         }
-        
+    }
+    if (currentScroll >= (whyContainerScroll - halfWindowHeight)) {
+        whyContainer.style.animationName = "slideFromBottom"
+        whyContainer.style.opacity = "1"
+        whyContainer.style.animationDuration = `${1}s`
     }
 })
 

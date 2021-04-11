@@ -212,6 +212,19 @@ html, body {
 	color: rgb(0, 132, 255);
 }
 
+#why {
+	background-color: rgb(248, 248, 248);		
+}
+
+.whyContainer {
+	opacity: 0;
+	height: 500px;
+}
+
+li {
+	text-align: left;
+}
+
 /*Project*/
 
 #project {
@@ -287,11 +300,11 @@ html, body {
 /*About*/
 
 #about {
-	min-height: 75%;
+	min-height: 65%;
 }
 
 .aboutRightItems {
-	width: 500px;
+	width: 600px;
 }
 
 .aboutLanguageContainer {
@@ -312,7 +325,7 @@ html, body {
 	background-color: rgb(22, 187, 179);
 	height: 41px;
 	width: 100px;
-	border-radius: 3%;
+	border-radius: 3.5%;
 }
 
 .hexagonTopDown {
@@ -321,7 +334,7 @@ html, body {
 	height: 41px;
 	width: 100px;
 	transform: rotate(90deg);
-	border-radius: 3%;
+	border-radius: 3.5%;
 }
 
 .hexagonTopRightLeft {
@@ -330,7 +343,7 @@ html, body {
 	height: 41px;
 	width: 100px;
 	transform: rotate(135deg);
-	border-radius: 3%;	
+	border-radius: 3.5%;
 }
 
 .hexagonTopLeftRight {
@@ -339,7 +352,7 @@ html, body {
 	height: 41px;
 	width: 100px;
 	transform: rotate(45deg);
-	border-radius: 3%;
+	border-radius: 3.5%;
 }
 
 .aboutLanguages {
