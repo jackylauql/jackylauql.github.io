@@ -46,7 +46,7 @@ html, body {
 }
 
 .mainContentContainer {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	padding-bottom: 80px;
 	text-align: center;
@@ -218,11 +218,242 @@ html, body {
 
 .whyContainer {
 	opacity: 0;
-	height: 500px;
+	min-height: 500px;
 }
 
 li {
+	
 	text-align: left;
+}
+
+.timelineContainer {
+	display: grid;
+	grid-template-columns: 4.5fr 0.05fr 0.05fr 0.05fr 4.5fr;
+	grid-template-rows: 7fr 1fr 4fr 1fr 5fr 1fr;
+	width: 1400px;
+	height: 600px;
+	font-size: 0.8rem;
+}
+
+.leftTimeline {
+	/* background-color: blue; */
+	margin: auto;
+	grid-column-start: 1;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.leftTimeline .timelineDate {
+	display: block;
+	float: right;
+	border-top-right-radius: 100%;
+	background-color: pink;
+	padding: 10px;
+	width: 250px;
+	text-align: left;
+	
+}
+
+.leftTimeline .timelineContent {
+	display: block;
+	float: right;
+}
+
+.timelinePointer {
+	display: block;
+	height: 300px;
+	width: 20px;
+	background-color: black;
+	float: right;
+}
+
+#firstRow {
+	grid-row-start: 1;
+}
+
+.firstTimelinePointer {
+	margin-left: 2px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: green;
+	grid-column-start: 4;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+}
+
+.firstArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 45%;
+	left: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+#secondRow {
+	grid-row-start: 2;
+}
+
+.secondTimelinePointer {
+	margin-right: 2px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: green;
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+.secondArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 40%;
+	right: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+
+#thirdRow {
+	grid-row-start: 2;
+	grid-row-end: span 2
+}
+
+.thirdTimelinePointer {
+	margin-left: 2px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: green;
+	grid-column-start: 4;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+}
+
+.thirdArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 45%;
+	left: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+#fourthRow {
+	grid-row-start: 4;
+}
+
+.fourthTimelinePointer {
+	margin-left: 2px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: green;
+	grid-column-start: 4;
+	grid-row-start: 4;
+	grid-row-end: span 1;
+}
+
+.fourthArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 45%;
+	left: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+#fifthRow {
+	grid-row-start: 4;
+	grid-row-end: span 3;
+}
+
+.fifthTimelinePointer {
+	margin-right: 2px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: green;
+	grid-column-start: 2;
+	grid-row-start: 4;
+	grid-row-end: span 3;
+}
+
+.fifthArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 45%;
+	right: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+#sixthRow {
+	grid-row-start: 6;
+}
+
+.sixthTimelinePointer {
+	margin-left: 2px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: green;
+	grid-column-start: 4;
+	grid-row-start: 6;
+	grid-row-end: span 1;
+}
+
+.sixthArrow {
+	position: relative;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 45%;
+	left: 5px;
+	background-color: green;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.middleTimeline {
+	background-color: red;
+	grid-column-start: 3;
+	grid-row-start: span 6;
+}
+
+.rightTimeline {
+	/* background-color: green; */
+	margin: auto;
+	grid-column-start: 5;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.rightTimeline .timelineDate {
+	display: block;
+	float: left;
+	border-top-left-radius: 100%;
+	background-color: pink;
+	padding: 10px;
+	width: 250px;
+	text-align: right;
+}
+
+.rightTimeline .timelineContent {
+	display: block;
+	padding-left: 10px;
+	float: left;
 }
 
 /*Project*/
