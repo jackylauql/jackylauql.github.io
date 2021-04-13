@@ -247,7 +247,9 @@ li {
 	display: block;
 	float: right;
 	border-top-right-radius: 100%;
-	background-color: pink;
+	background-color: rgba(67, 226, 218, 0.788);
+	color: rgb(26, 26, 26);
+	font-weight: bold;
 	padding: 10px;
 	width: 250px;
 	text-align: left;
@@ -275,7 +277,7 @@ li {
 	margin-left: 2px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 4;
 	grid-row-start: 1;
 	grid-row-end: span 1;
@@ -288,7 +290,7 @@ li {
 	height: 10px;
 	top: 45%;
 	left: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
@@ -301,7 +303,7 @@ li {
 	margin-right: 2px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 2;
 	grid-row-start: 2;
 	grid-row-end: span 1;
@@ -314,7 +316,7 @@ li {
 	height: 10px;
 	top: 40%;
 	right: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
@@ -329,7 +331,7 @@ li {
 	margin-left: 2px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 4;
 	grid-row-start: 2;
 	grid-row-end: span 2;
@@ -342,7 +344,7 @@ li {
 	height: 10px;
 	top: 45%;
 	left: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
@@ -355,7 +357,7 @@ li {
 	margin-left: 2px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 4;
 	grid-row-start: 4;
 	grid-row-end: span 1;
@@ -368,7 +370,7 @@ li {
 	height: 10px;
 	top: 45%;
 	left: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
@@ -382,7 +384,7 @@ li {
 	margin-right: 2px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 2;
 	grid-row-start: 4;
 	grid-row-end: span 3;
@@ -395,7 +397,7 @@ li {
 	height: 10px;
 	top: 45%;
 	right: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
@@ -408,7 +410,7 @@ li {
 	margin-left: 2px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	grid-column-start: 4;
 	grid-row-start: 6;
 	grid-row-end: span 1;
@@ -421,13 +423,13 @@ li {
 	height: 10px;
 	top: 45%;
 	left: 5px;
-	background-color: green;
+	background-color: rgb(13, 122, 117);
 	transform: rotate(45deg);
 	z-index: 1;
 }
 
 .middleTimeline {
-	background-color: red;
+	background-image: linear-gradient(rgba(236, 54, 22, 0.5), rgba(212, 128, 18, 0.5));
 	grid-column-start: 3;
 	grid-row-start: span 6;
 }
@@ -444,7 +446,9 @@ li {
 	display: block;
 	float: left;
 	border-top-left-radius: 100%;
-	background-color: pink;
+	background-color: rgba(67, 226, 218, 0.788);
+	color: rgb(26, 26, 26);
+	font-weight: bold;
 	padding: 10px;
 	width: 250px;
 	text-align: right;
