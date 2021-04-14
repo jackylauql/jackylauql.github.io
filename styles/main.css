@@ -191,7 +191,9 @@ html, body {
 /* Intro */
 
 #intro {
-	background-image: url('/images/intro_wallpaper.jpg');
+	background-image: url('/images/intro_wallpaper2.jpg');
+	background-size: cover;
+	background-position: center;
 	background-color: rgba(255, 255, 255, 0.51);
 	background-blend-mode: color;
 	height: 100%;
